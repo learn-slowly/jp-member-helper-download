@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>당원관리 도우미 내려받기</title>
+<style>
+  :root {
+    --ink: #1c2230; --sub: #5b6475; --line: #dfe3ea; --bg: #f4f6f9; --card: #ffffff;
+    --btn: #1c2230; --btn-ink: #ffffff; --accent: #1a5fd0; --warn: #fff1f0; --warn-line: #e53935;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8ebf1; --sub: #a3abba; --line: #333a48; --bg: #14171d; --card: #1d2129;
+      --btn: #e8ebf1; --btn-ink: #14171d; --accent: #7aa7ff; --warn: #2a1b1b; --warn-line: #ff6b66;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-size: 17px; line-height: 1.7; word-break: keep-all;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  .ver { color: var(--sub); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 22px; margin: 16px 0; }
+  .card h2 { font-size: 20px; margin: 0 0 10px; }
+  .btn {
+    display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 20px;
+    background: var(--btn); color: var(--btn-ink); border-radius: 12px; padding: 16px 20px; margin: 10px 0;
+  }
+  .btn.sub { background: transparent; color: var(--ink); border: 2px solid var(--ink); font-size: 18px; }
+  .btn small { display: block; font-weight: 400; font-size: 14px; opacity: .8; }
+  ol { padding-left: 1.4em; margin: 6px 0; }
+  li { margin: 6px 0; }
+  code { font-family: Consolas, Menlo, monospace; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; }
+  .note { background: var(--warn); border-left: 5px solid var(--warn-line); border-radius: 0 10px 10px 0; padding: 12px 16px; }
+  .safe p { margin: 4px 0; }
+  footer { color: var(--sub); font-size: 14px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>당원관리 도우미</h1>
+  <p class="ver">판 0.3.0 · 윈도우·맥의 크롬에서 씁니다</p>
+
+  <div class="card">
+    <h2>1. 두 가지를 내려받으세요</h2>
+    <a class="btn" href="jp-member-helper-0.3.0.zip" download="당원관리도우미-0.3.0.zip">프로그램 내려받기<small>압축 파일 · 판 0.3.0</small></a>
+    <a class="btn sub" href="guide.pdf" download="당원관리도우미-사용안내.pdf">사진 안내서 내려받기 (PDF)</a>
+  </div>
+
+  <div class="card">
+    <h2>2. 설치 순서 (자세한 내용은 사진 안내서)</h2>
+    <ol>
+      <li>내려받은 압축 파일을 <b>오른쪽 단추 → "모두 압축 풀기"</b>로 풀고, 풀린 폴더를 바탕화면에 둡니다.</li>
+      <li>크롬 주소창에 <code>chrome://extensions</code> 를 적고 Enter를 누릅니다.</li>
+      <li>오른쪽 위 <b>"개발자 모드"</b>를 켭니다.</li>
+      <li><b>"압축해제된 확장 프로그램 로드"</b>를 누르고 풀린 폴더를 고릅니다.</li>
+      <li>주소창 옆 퍼즐 단추에서 "당원관리 도우미"를 <b>압정으로 고정</b>합니다.</li>
+      <li>담당자에게 받은 <b>출발점 장부 파일</b>을 도우미의 설정 → [장부 가져오기]로 넣습니다.</li>
+    </ol>
+    <p class="note">풀린 폴더는 <b>지우거나 옮기지 마세요.</b> 폴더가 없어지면 도우미도 꺼집니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>새 판으로 바꿀 때</h2>
+    <ol>
+      <li>새 압축 파일을 풀어 <b>예전 폴더와 같은 자리, 같은 이름</b>으로 덮어씁니다.</li>
+      <li><code>chrome://extensions</code> 에서 도우미 상자의 <b>↻</b> 단추를 누릅니다.</li>
+      <li>이름 옆 판 번호가 <b>0.3.0</b>인지 봅니다.</li>
+    </ol>
+  </div>
+
+  <div class="card safe">
+    <h2>안심하고 쓰세요</h2>
+    <p>· 받은 자료는 <b>그 컴퓨터의 크롬 안에만</b> 저장되고, 다른 곳으로 보내지 않습니다.</p>
+    <p>· 비밀번호를 묻거나 저장하지 않습니다. 로그인은 당원관리 시스템에서 직접 합니다.</p>
+    <p>· 당원관리 시스템의 자료를 읽기만 하고, 고치거나 보내지 않습니다.</p>
+  </div>
+
+  <footer>문의는 담당자에게 해 주세요.</footer>
+</div>
+</body>
+</html>
